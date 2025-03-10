@@ -14,7 +14,28 @@ header {
     font-family: Montserrat;
     height: 800px;
     background-color: rgb(225, 255, 143);
-    
+}
+
+.header-img {
+    position: absolute;
+    z-index: 0;
+    right: -488px;
+    top: -333.46px;
+}
+.header-minzvezda {
+    position: absolute;
+    top: 69px;
+    left: 156px;
+}
+.header-minzvezdaRGB {
+    position: absolute;
+    top: 94px;
+    left: 63px;
+}
+.header-minzvezdaright{
+    position: absolute;
+    bottom: 146px;
+    right: 200px;
 }
 .header__start {
     display: flex;
