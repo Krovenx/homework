@@ -121,4 +121,8 @@ header {
   position: static;
   width: 36px;
   height: 36px;
+}
+
+.game {
+  background: rgb(32, 32, 39);
 }/*# sourceMappingURL=style.css.map */
