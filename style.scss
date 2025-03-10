@@ -12,7 +12,6 @@ body {
 header {
     padding-top: 196px;
     font-family: Montserrat;
-    height: 800px;
     background-color: rgb(225, 255, 143);
 }
 
@@ -109,4 +108,22 @@ margin: 0px 51px;
 }
 .game {
     background: rgb(32, 32, 39);
+}
+.game__start {
+    width: 788px;
+    font-family: Montserrar;
+}
+.game__start-heading {
+    padding-top: 94px;
+    padding-bottom: 24px;
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+}
+.game__start-text {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
 }
