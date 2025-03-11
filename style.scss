@@ -208,6 +208,7 @@ header {
     flex-direction: column;
     row-gap: 32px;
     background: rgb(32, 32, 39);
+    padding-bottom: 144px;
 }
 
 .mini-games__game-title {
@@ -271,4 +272,21 @@ header {
 .mini-games__game-img {
     width: 600px;
     border-radius: 50px;
+}
+.end {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(189, 237, 53);
+    
+}
+
+.end-text {
+    
+    margin: 60px 0px;
 }
