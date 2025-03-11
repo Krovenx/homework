@@ -127,3 +127,48 @@ margin: 0px 51px;
     font-weight: 400;
     line-height: 32px;
 }
+.game__cart {
+    font-family: Montserrat;
+    display: flex;
+    flex-wrap: wrap;
+    gap:32px;
+    padding-top: 72px;
+}
+.game__cart-article {
+    border-radius:30px;
+    background-color: #fff;
+}
+.game__cart-box {
+    width: 314px;
+    display: flex;
+    flex-direction: column;
+    gap:16px ;
+    padding: 0px 32px;
+    padding-top: 32px;
+    padding-bottom: 36px;
+}
+.game__cart-text {
+    color: rgb(32, 32, 39);
+    font-weight: 700;
+    line-height: 39px;
+}
+.game__cart-textbig {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+}
+.game__cart-img {
+    border-radius: 30px;
+}
+.game__cart-number {
+    color: rgb(32, 32, 39);
+font-size: 16px;
+font-weight: 500;
+line-height: 110%;
+border-radius: 52.58px;
+background: rgb(247, 247, 247);
+padding: 8px 16px 10px 16px;
+width: 108px;
+display: flex;
+justify-content: center;
+}
