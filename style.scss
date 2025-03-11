@@ -2,13 +2,16 @@
     padding: 0;
     margin: 0;
 }
+
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
+
 body {
     box-sizing: border-box;
 }
+
 header {
     padding-top: 196px;
     font-family: Montserrat;
@@ -21,47 +24,56 @@ header {
     right: -488px;
     top: -333.46px;
 }
+
 .header-minzvezda {
     position: absolute;
     top: 69px;
     left: 156px;
 }
+
 .header-minzvezdaRGB {
     position: absolute;
     top: 94px;
     left: 63px;
 }
-.header-minzvezdaright{
+
+.header-minzvezdaright {
     position: absolute;
     bottom: 146px;
     right: 200px;
 }
+
 .header__start {
     display: flex;
     flex-direction: column;
     row-gap: 24px;
 }
+
 .header__start-heading {
     color: rgb(32, 32, 39);
     font-size: 64px;
     font-weight: 700;
     line-height: 78px;
 }
+
 .header__start-text {
     color: rgb(32, 32, 39);
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
 }
+
 .header__start-span {
     font-weight: 600;
 }
+
 .header__start-href {
     width: 247px;
 }
+
 .header__start-button {
-    margin:48px 0px;
-    border-radius:60px;
+    margin: 48px 0px;
+    border-radius: 60px;
     background: #000;
     color: rgb(255, 255, 255);
     font-family: Montserrat;
@@ -71,11 +83,13 @@ header {
     height: 66px;
     width: 247px;
 }
+
 .header__start-button:hover {
-    transition: all 0.7s ;
+    transition: all 0.7s;
     background: rgb(255, 255, 255);
     color: #000;
 }
+
 .header__animal {
     margin-top: 156px;
     height: 90px;
@@ -84,21 +98,22 @@ header {
     font-family: Montserrar;
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(50px);
-    background: rgb(188, 236, 48); 
+    background: rgb(188, 236, 48);
 }
+
 .header__animal-item {
     color: rgb(32, 32, 39);
-font-size: 30px;
-font-weight: 700;
-line-height: 110%;
-letter-spacing: 4%;
-text-align: left;
-text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 4%;
+    text-align: left;
+    text-transform: uppercase;
 
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 0px 51px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 51px;
 }
 
 .header__animal-img {
@@ -106,13 +121,18 @@ margin: 0px 51px;
     width: 36px;
     height: 36px;
 }
+
 .game {
+    padding-bottom: 50px;
     background: rgb(32, 32, 39);
+    font-family: Montserrat;
 }
+
 .game__start {
     width: 788px;
-    font-family: Montserrar;
+    
 }
+
 .game__start-heading {
     padding-top: 94px;
     padding-bottom: 24px;
@@ -121,54 +141,134 @@ margin: 0px 51px;
     font-weight: 700;
     line-height: 78px;
 }
+
 .game__start-text {
     color: rgb(255, 255, 255);
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
 }
+
 .game__cart {
-    font-family: Montserrat;
     display: flex;
     flex-wrap: wrap;
-    gap:32px;
+    gap: 32px;
     padding-top: 72px;
 }
+
 .game__cart-article {
-    border-radius:30px;
+    border-radius: 30px;
     background-color: #fff;
 }
+
 .game__cart-box {
     width: 314px;
     display: flex;
     flex-direction: column;
-    gap:16px ;
+    gap: 16px;
     padding: 0px 32px;
     padding-top: 32px;
     padding-bottom: 36px;
 }
+
 .game__cart-text {
     color: rgb(32, 32, 39);
     font-weight: 700;
     line-height: 39px;
+    font-size: 32px;
 }
+
 .game__cart-textbig {
     font-size: 32px;
     font-weight: 700;
     line-height: 39px;
 }
+
 .game__cart-img {
     border-radius: 30px;
 }
+
 .game__cart-number {
     color: rgb(32, 32, 39);
-font-size: 16px;
-font-weight: 500;
-line-height: 110%;
-border-radius: 52.58px;
-background: rgb(247, 247, 247);
-padding: 8px 16px 10px 16px;
-width: 108px;
-display: flex;
-justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 110%;
+    border-radius: 52.58px;
+    background: rgb(247, 247, 247);
+    padding: 8px 16px 10px 16px;
+    width: 108px;
+    display: flex;
+    justify-content: center;
+}
+
+.mini-games {
+    font-family: Montserrat;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 32px;
+    background: rgb(32, 32, 39);
+}
+
+.mini-games__game-title {
+    padding-bottom: 72px;
+    padding-top: 46px;
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+}
+
+.mini-games__game {
+    display: flex;
+    background-color: #fff;
+    border-radius: 55px;
+
+}
+
+.mini-games__game-heading {
+    padding-bottom: 24px;
+    color: rgb(32, 32, 39);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+}
+
+.mini-games__game-text {
+    max-width: 457px;
+    color: rgb(32, 32, 39);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.mini-games__game-box {
+    width: 504px;
+    padding: 48px 48px;
+}
+
+.mini-games__game-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 28px;
+    margin: 36px 0px;
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    width: 247px;
+}
+.mini-games__game-button:hover {
+    transition: all 0.7s;
+    background: rgb(255, 255, 255);
+    color: #000;
+}
+
+.mini-games__game-img {
+    width: 600px;
+    border-radius: 50px;
 }
