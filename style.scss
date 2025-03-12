@@ -2,9 +2,6 @@
     padding: 0;
     margin: 0;
 }
-html {
-    scroll-behavior: smooth;
-}
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
@@ -12,6 +9,7 @@ html {
 
 body {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -40,18 +38,14 @@ header {
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
+    padding-bottom: 24px;
 }
 
 .header__start-span {
     font-weight: 600;
 }
 
-.header__start-href {
-    width: 247px;
-}
-
 .header__start-button {
-    margin: 48px 0px;
     border-radius: 60px;
     background: #000;
     color: rgb(255, 255, 255);
@@ -61,6 +55,10 @@ header {
     line-height: 141.69%;
     height: 66px;
     width: 247px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 .header__start-button:hover {
@@ -234,6 +232,7 @@ header {
 }
 
 .mini-games__game-heading {
+    scroll-margin-top: 50vh;
     padding-bottom: 24px;
     color: rgb(32, 32, 39);
     font-size: 48px;
