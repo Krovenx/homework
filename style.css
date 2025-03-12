@@ -146,13 +146,17 @@ header {
   padding-top: 72px;
 }
 
+.game__cart-href {
+  z-index: 1;
+  text-decoration: none;
+}
+
 .game__cart-article {
   border-radius: 30px;
   background-color: #fff;
-  z-index: 1;
 }
 
-.game__cart-article:hover {
+.game__cart-href:hover {
   transform: scale(1.3);
   transition: all 0.3s;
   z-index: 0;
