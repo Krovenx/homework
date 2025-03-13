@@ -174,26 +174,13 @@ header {
     width: 314px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    padding: 48px 30px;
+    padding: 36px 32px;
 }
 
-.game__cart-text {
-    color: rgb(32, 32, 39);
-    font-weight: 700;
-    line-height: 39px;
-    font-size: 32px;
-
-}
-
-.game__cart-textbig {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 39px;
-}
-
-.game__cart-img {
-    border-radius: 30px;
+.game__block {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .game__cart-number {
@@ -206,6 +193,26 @@ header {
     display: flex;
     padding-left: 18px;
 }
+
+.game__cart-text {
+    color: rgb(32, 32, 39);
+    font-weight: 700;
+    line-height: 39px;
+    font-size: 32px;
+    padding-top: 25px;
+}
+
+.game__cart-textbig {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+}
+
+.game__cart-img {
+    border-radius: 30px;
+}
+
+
 
 .mini-games {
     font-family: Montserrat;
