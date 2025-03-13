@@ -75,6 +75,7 @@ header {
   background: rgb(188, 236, 48);
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .header__animal-scroll {
@@ -208,13 +209,13 @@ header {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  row-gap: 32px;
+  row-gap: 30px;
   background: rgb(32, 32, 39);
   padding-bottom: 144px;
 }
 
 .mini-games__game-title {
-  padding-bottom: 72px;
+  padding-bottom: 42px;
   padding-top: 46px;
   color: rgb(255, 255, 255);
   font-size: 64px;
@@ -225,7 +226,7 @@ header {
 .mini-games__game {
   display: flex;
   background-color: #fff;
-  border-radius: 55px;
+  border-radius: 45px;
 }
 
 .mini-games__game-heading {
@@ -235,10 +236,10 @@ header {
   font-size: 48px;
   font-weight: 700;
   line-height: 59px;
+  width: 100%;
 }
 
 .mini-games__game-text {
-  max-width: 457px;
   color: rgb(32, 32, 39);
   font-size: 24px;
   font-weight: 400;
@@ -255,7 +256,7 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 16px 28px;
+  padding: 15px 28px;
   margin: 36px 0px;
   border-radius: 60px;
   background: rgb(32, 32, 39);
@@ -274,7 +275,7 @@ header {
 
 .mini-games__game-img {
   width: 600px;
-  border-radius: 50px;
+  border-radius: 35px;
 }
 
 .end {
