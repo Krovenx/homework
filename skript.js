@@ -1,7 +1,6 @@
-let a = Number(10);
+let a = Number(alert('10'));
+let b =Number(alert('20'));
 
-alert(a);
+let age = ('Год выпуска первого Айфона');
 
-let b =Number(20);
-
-alert(b);
+alert(age);
