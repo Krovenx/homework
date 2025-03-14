@@ -16,3 +16,6 @@ alert(
     "  умножение: " + (num1 * num2) +
     "  деление: " + (num1 / num2)
 );
+
+let result = 2 ** 5;
+alert (result);
