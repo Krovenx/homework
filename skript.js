@@ -4,3 +4,4 @@ let b =Number(alert('20'));
 let age = ('Год выпуска первого Айфона');
 
 alert(age);
+let userName =(alert('Создатель языка JavaScript Виталий'));
