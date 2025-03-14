@@ -25,3 +25,11 @@ let d = Number('2');
 
 alert ("Остаток : " + (c % d));
 
+let num = 1;
+ num += 5; // Эквивалентно num = num + 5;
+ num -= 3; // Эквивалентно num = num - 3;
+ num *= 7; // Эквивалентно num = num * 7;
+ num /= 3; // Эквивалентно num = num / 3;
+ num ++= ;  // Эквивалентно num = num + 1;
+ num --= ;  // Эквивалентно num = num - 1;
+alert(num);
