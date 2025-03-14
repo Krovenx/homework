@@ -44,3 +44,6 @@ console.log(user);
 alert(
     `Имя: ${user.name}\nВозраст: ${user.age}\nАдминистратор: ${user.isAdmin ? "Да" : "Нет"}`
 )
+
+let userNam = prompt("Как вас зовут?");
+alert(`Привет, ${userNam}!`);
