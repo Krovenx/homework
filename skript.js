@@ -19,3 +19,9 @@ alert(
 
 let result = 2 ** 5;
 alert (result);
+
+let c = Number('9');
+let d = Number('2');
+
+alert ("Остаток : " + (c % d));
+
