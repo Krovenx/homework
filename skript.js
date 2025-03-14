@@ -33,3 +33,14 @@ let num = 1;
 alert(num);
 
 let age = prompt('сколько вам лет?');
+
+let user = {
+ name: "Виталий" ,
+ age:  "21",
+ isAdmin:true
+};
+
+console.log(user);
+alert(
+    `Имя: ${user.name}\nВозраст: ${user.age}\nАдминистратор: ${user.isAdmin ? "Да" : "Нет"}`
+)
