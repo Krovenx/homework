@@ -24,12 +24,17 @@
   }
   .header .header__start-button {
     align-items: center;
-    width: 285px;
+    padding: 0px 20px;
     height: 55px;
     font-size: 16px;
     line-height: 141.69%;
   }
+  .header .header__start-box {
+    padding-top: 12px;
+    display: flex;
+  }
   .header .header__animal {
+    height: 51px;
     margin-top: 131px;
   }
   .header .header__animal-item {
@@ -84,9 +89,6 @@
   }
 }
 @media (min-width: 375px) and (max-width: 424px) {
-  .mini-games {
-    padding-bottom: 48px;
-  }
   .mini-games__game {
     flex-wrap: wrap;
     max-width: 343px;
@@ -158,6 +160,12 @@ header {
 
 .header__start-span {
   font-weight: 600;
+}
+
+.header__start-box {
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
 }
 
 .header__start-button {
@@ -319,6 +327,7 @@ header {
 }
 
 .mini-games {
+  align-items: center;
   font-family: Montserrat;
   display: flex;
   flex-wrap: wrap;
@@ -326,6 +335,10 @@ header {
   row-gap: 30px;
   background: rgb(32, 32, 39);
   padding-bottom: 144px;
+}
+
+.mini-games__box {
+  display: flex;
 }
 
 .mini-games__title {
@@ -407,6 +420,6 @@ header {
 }
 
 .end-text {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }/*# sourceMappingURL=style.css.map */

@@ -50,6 +50,12 @@ header {
     font-weight: 600;
 }
 
+.header__start-box {
+    justify-content: center;
+    align-items: center;
+    padding-top:24px;
+}
+
 .header__start-button {
     border-radius: 60px;
     background: #000;
@@ -222,7 +228,7 @@ header {
 
 
 .mini-games {
-    
+    align-items: center;
     font-family: Montserrat;
     display: flex;
     flex-wrap: wrap;
@@ -230,6 +236,10 @@ header {
     row-gap: 30px;
     background: rgb(32, 32, 39);
     padding-bottom: 144px;
+}
+
+.mini-games__box {
+    display: flex;
 }
 
 .mini-games__title {
@@ -317,6 +327,6 @@ header {
 
 .end-text {
 
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
