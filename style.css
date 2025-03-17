@@ -131,6 +131,10 @@ body {
 }
 
 header {
+  overflow: hidden;
+  background-image: url(img/bigzvezda.svg), url(img/minzvezdaright.svg), url(img/minzvezdarightRGB.svg), url(img/bigzvezdaRGB.svg), url(img/minzvezda.svg);
+  background-repeat: no-repeat;
+  background-position: top -333px right -502px, right 330px top 567px, right 440px top 537px, left 64px top 95px, left 156px top 70px;
   width: 100%;
   padding-top: 196px;
   font-family: Montserrat;

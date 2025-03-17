@@ -4,7 +4,8 @@ let b = Number(alert('20'));
 let yearOfIssue = 2007;
 alert (`Год выпуска первого Айфона ${yearOfIssue}`);
 
-let userName = (alert('Создатель языка JavaScript Brendan Eich'));
+let userName = ('Brendan Eich');
+alert(`Создатель языка JavaSckript: ${userName}`);
 
 let num1 = 10;
 let num2 = 2;
