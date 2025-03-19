@@ -1,45 +1,84 @@
-let a = Number(alert('10'));
-let b = Number(alert('20'));
+let password = 'пароль';
+let userPassword = (prompt('Введите пароль'));
+userPassword = userPassword.toLocaleLowerCase()
+switch (userPassword) {
+    case `${password}`:
+        console.log('Пароль введен верно');
+        break;
+    default:
+        console.log('Пароль введен неправильно');
+        break;
+}
 
-let yearOfIssue = 2007;
-alert (`Год выпуска первого Айфона ${yearOfIssue}`);
+let c = 5;
+if (c >= 0 && c <= 10) {
+    console.log('Верно');
+} else {
+    console.log('Неверно');
+}
 
-let userName = ('Brendan Eich');
-alert(`Создатель языка JavaSckript: ${userName}`);
+let d = 105;
+let e = 10;
+if (d >= 100 || e <= 100) {
+    console.log('Верно')
+} else {
+    console.log('Неверно')
+}
+let a = '2';
+let b = '3';
+console.log(a + b);
 
-let num1 = 10;
-let num2 = 2;
-alert(
-    "  сумма: " + (num1 + num2) +
-    "  разность: " + (num1 - num2) +
-    "  умножение: " + (num1 * num2) +
-    "  деление: " + (num1 / num2)
-);
+let monthNumber = prompt("Введите номер месяца(от 1 до 12)");
+if (monthNumber < 1 || monthNumber > 12) {
+    console.log("номер месяца должен быть от 1 до 12");
+} else {
+    switch (monthNumber) {
+        case ('12'):
+            console.log("Зима")
+            break;
+        case ('1'):
+            console.log("Зима")
+            break;
+        case ('2'):
+            console.log("Зима")
+            break;
+        case ('3'):
+            console.log("Весна")
+            break;
+        case ('4'):
+            console.log("Весна")
+            break;
+        case ('5'):
+            console.log("Весна")
+            break;
+        case ('6'):
+            console.log("Лето")
+            break;
+        case ('7'):
+            console.log("Лето")
+            break;
+        case ('8'):
+            console.log("Лето")
+            break;
+        case ('9'):
+            console.log("Осень")
+            break;
+        case ('10'):
+            console.log("Осень")
+            break;
+        case ('11'):
+            console.log("Осень")
+            break;
+        default:
+            console.log("Номер месяца не больше 12")
+            break;
+    }
+}
 
-let result = 2 ** 5;
-alert(result);
 
-let c = Number('9');
-let d = Number('2');
-alert("Остаток : " + (c % d));
 
-let num = 1;
-num += 5; 
-num -= 3; 
-num *= 7; 
-num /= 3; 
-alert(num);
 
-let age = prompt(`сколько вам лет?`);
-let user = {
-    name: "Виталий",
-    age:`${age}` ,
-    isAdmin: true
-};
-console.log(user);
-alert(
-    `Имя: ${user.name}\nВозраст: ${user.age}\nАдминистратор: ${user.isAdmin ? "Да" : "Нет"}`
-)
 
-let userNam = prompt("Как вас зовут?");
-alert(`Привет, ${userNam}!`);
+
+
+

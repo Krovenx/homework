@@ -61,29 +61,33 @@
         }
 
         .mini-games__title {
+            padding-bottom: 20px;
+            width: 91%;
             font-size: 40px;
             line-height: 49px;     
         }
 
-        .mini-games_game-box {
-            width: 314px;
-
-
+        .mini-games__game-box {
+            padding: 24px 29px;
         }
 
         .mini-games__game-heading {
+            padding-bottom: 14px;
             font-size: 32px;
             line-height: 39px;
         }
 
         .mini-games__game-text {
+            margin-bottom: 31px;
             font-size: 16px;
             line-height: 20px;
         }
 
         .mini-games__game-button {
+            margin-bottom: 6px;
             font-size: 16px;
             line-height: 141.69%;
+            width: 285px;
         }
     }
 

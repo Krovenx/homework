@@ -57,23 +57,29 @@
     max-width: 343px;
   }
   .mini-games .mini-games__title {
+    padding-bottom: 20px;
+    width: 91%;
     font-size: 40px;
     line-height: 49px;
   }
-  .mini-games .mini-games_game-box {
-    width: 314px;
+  .mini-games .mini-games__game-box {
+    padding: 24px 29px;
   }
   .mini-games .mini-games__game-heading {
+    padding-bottom: 14px;
     font-size: 32px;
     line-height: 39px;
   }
   .mini-games .mini-games__game-text {
+    margin-bottom: 31px;
     font-size: 16px;
     line-height: 20px;
   }
   .mini-games .mini-games__game-button {
+    margin-bottom: 6px;
     font-size: 16px;
     line-height: 141.69%;
+    width: 285px;
   }
   .game {
     display: none;
@@ -291,7 +297,7 @@ header {
   width: 314px;
   display: flex;
   flex-direction: column;
-  padding: 36px 32px;
+  padding: 29px 32px;
 }
 
 .game__block {
@@ -308,8 +314,14 @@ header {
   border-radius: 52.58px;
   background: rgb(247, 247, 247);
   display: flex;
-  padding-left: 18px;
+  padding-left: 15px;
+  padding-top: 8px;
   width: 76px;
+}
+
+.game__cart-numbers {
+  display: flex;
+  justify-content: center;
 }
 
 .game__cart-text {
@@ -318,6 +330,7 @@ header {
   line-height: 39px;
   font-size: 32px;
   padding-top: 25px;
+  padding-bottom: 7px;
 }
 
 .game__cart-textbig {
@@ -358,7 +371,7 @@ header {
 .mini-games__game {
   display: flex;
   background-color: #fff;
-  border-radius: 45px;
+  border-radius: 48px;
   width: 100%;
   justify-content: space-between;
 }
@@ -374,6 +387,7 @@ header {
 }
 
 .mini-games__game-text {
+  margin-bottom: 36px;
   color: rgb(32, 32, 39);
   font-size: 24px;
   font-weight: 400;
@@ -385,12 +399,12 @@ header {
 }
 
 .mini-games__game-button {
+  font-family: Montserrat;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 15px 28px;
-  margin: 36px 0px;
   border-radius: 60px;
   background: rgb(32, 32, 39);
   color: rgb(255, 255, 255);
@@ -408,7 +422,7 @@ header {
 
 .mini-games__game-img {
   width: 600px;
-  border-radius: 35px;
+  border-radius: 48px;
 }
 
 .end {
@@ -424,6 +438,6 @@ header {
 }
 
 .end-text {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }/*# sourceMappingURL=style.css.map */
