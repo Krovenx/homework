@@ -140,7 +140,7 @@ header {
   overflow: hidden;
   background-image: url(img/bigzvezda.svg), url(img/minzvezdaright.svg), url(img/minzvezdarightRGB.svg), url(img/bigzvezdaRGB.svg), url(img/minzvezda.svg);
   background-repeat: no-repeat;
-  background-position: top -333px right -502px, right 330px top 567px, right 440px top 537px, left 64px top 95px, left 156px top 70px;
+  background-position: top -331px right -491px, right 344px top 568px, right 456px top 538px, left 64px top 95px, left 156px top 70px;
   width: 100%;
   padding-top: 196px;
   font-family: Montserrat;
@@ -247,8 +247,12 @@ header {
 }
 
 .game {
-  padding-bottom: 50px;
   background: rgb(32, 32, 39);
+  position: relative;
+  background-image: url(img/GameBigZvezda.png), url(img/GameMinLeft.png), url(img/GameBigLeft.png);
+  background-position: calc(100% + 110px) 110px, calc(1% + 14px) 770px, calc(1% + 31px) 824px;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
   font-family: Montserrat;
 }
 
@@ -344,6 +348,7 @@ header {
 }
 
 .mini-games {
+  position: relative;
   align-items: center;
   font-family: Montserrat;
   display: flex;
@@ -352,6 +357,9 @@ header {
   row-gap: 30px;
   background: rgb(32, 32, 39);
   padding-bottom: 144px;
+  background-image: url(img/MiniGameZvezda.png), url(img/GameMinLeft.png), url(img/MiniGameBigZvedabottom.png), url(img/MiniGameMinzvedabottom.png);
+  background-position: calc(100% - 50px) 130px, calc(100% - 128px) 96px, calc(100% - 51px) 3365px, calc(100% - 150px) 3412px;
+  background-repeat: no-repeat;
 }
 
 .mini-games__box {
