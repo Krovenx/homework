@@ -49,35 +49,36 @@
     flex-direction: column-reverse;
   }
   .mini-games {
-    padding-bottom: 48px;
+    padding-bottom: 48px !important;
+    background-image: none;
   }
   .mini-games__game {
     flex-wrap: wrap;
     max-width: 343px;
   }
-  .mini-games .mini-games__game-img {
+  .mini-games__game-img {
     max-width: 343px;
   }
-  .mini-games .mini-games__title {
+  .mini-games__title {
     padding-bottom: 20px;
     width: 91%;
     font-size: 40px;
     line-height: 49px;
   }
-  .mini-games .mini-games__game-box {
+  .mini-games__game-box {
     padding: 24px 29px;
   }
-  .mini-games .mini-games__game-heading {
+  .mini-games__game-heading {
     padding-bottom: 14px;
     font-size: 32px;
     line-height: 39px;
   }
-  .mini-games .mini-games__game-text {
+  .mini-games__game-text {
     margin-bottom: 31px;
     font-size: 16px;
     line-height: 20px;
   }
-  .mini-games .mini-games__game-button {
+  .mini-games__game-button {
     margin-bottom: 6px;
     font-size: 16px;
     line-height: 141.69%;
@@ -358,10 +359,10 @@ header {
   flex-direction: column;
   row-gap: 30px;
   background: rgb(32, 32, 39);
-  padding-bottom: 144px;
   background-image: url(img/MiniGameZvezda.png), url(img/GameMinLeft.png), url(img/MiniGameBigZvedabottom.png), url(img/MiniGameMinzvedabottom.png);
   background-position: calc(100% - 50px) 130px, calc(100% - 128px) 96px, calc(100% - 51px) 3365px, calc(100% - 150px) 3412px;
   background-repeat: no-repeat;
+  padding-bottom: 144px;
 }
 
 .mini-games__box {

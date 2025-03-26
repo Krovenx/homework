@@ -254,16 +254,15 @@ header {
     flex-direction: column;
     row-gap: 30px;
     background: rgb(32, 32, 39);
-    padding-bottom: 144px;
+   
     background-image: url(img/MiniGameZvezda.png), url(img/GameMinLeft.png), url(img/MiniGameBigZvedabottom.png), url(img/MiniGameMinzvedabottom.png);
     background-position:
         calc(100% - 50px) 130px,
         calc(100% - 128px) 96px,
         calc(100% - 51px) 3365px,
         calc(100% - 150px) 3412px;
-
     background-repeat: no-repeat;
-
+    padding-bottom:144px;
 }
 
 .mini-games__box {
