@@ -5,7 +5,14 @@
     }
 
     .header {
+        background-image: url(img/MobileBigZvezda.png), url(img/MobileZvezdaMInLeft.png), url(img/MObileZvezdaRGBLeft.png), url(img/MobileZvezdaMinBottom.png), url(img/MObileZvezdabottom.png);
+        background-position: calc(100% + 85px) -85px,
+            calc(1% + 94px) 64px,
+            calc(1% + 40px) 96px,
+            calc(40% + 132px) 556px,
+            calc(51% + 133px) 579px;
         padding-top: 147px;
+
         .header__start {
             padding: 0px 57px;
 
@@ -26,8 +33,9 @@
                 font-size: 16px;
                 line-height: 141.69%;
             }
+
             &-box {
-                padding-top:12px;
+                padding-top: 12px;
                 display: flex;
             }
         }
@@ -39,6 +47,7 @@
             &-item {
                 font-size: 16px;
             }
+
             &-img {
                 height: 19px;
             }
@@ -51,7 +60,8 @@
 
     .mini-games {
         padding-bottom: 48px;
-        &__game {  
+
+        &__game {
             flex-wrap: wrap;
             max-width: 343px;
         }
@@ -64,7 +74,7 @@
             padding-bottom: 20px;
             width: 91%;
             font-size: 40px;
-            line-height: 49px;     
+            line-height: 49px;
         }
 
         .mini-games__game-box {
@@ -98,18 +108,20 @@
             display: none;
         }
     }
+
     .end {
         &-text {
-        font-size: 16px;
-    line-height: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    }
+            font-size: 16px;
+            line-height: 20px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
     }
 }
+
 @media (min-width: 375px) and (max-width:424px) {
     .mini-games {
-        &__game {  
+        &__game {
             flex-wrap: wrap;
             max-width: 343px;
         }

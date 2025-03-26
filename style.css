@@ -9,6 +9,8 @@
     padding-right: 16px;
   }
   .header {
+    background-image: url(img/MobileBigZvezda.png), url(img/MobileZvezdaMInLeft.png), url(img/MObileZvezdaRGBLeft.png), url(img/MobileZvezdaMinBottom.png), url(img/MObileZvezdabottom.png);
+    background-position: calc(100% + 85px) -85px, calc(1% + 94px) 64px, calc(1% + 40px) 96px, calc(40% + 132px) 556px, calc(51% + 133px) 579px;
     padding-top: 147px;
   }
   .header .header__start {
@@ -281,36 +283,40 @@ header {
   padding-top: 72px;
 }
 
-.game__cart-href {
-  z-index: 1;
-  text-decoration: none;
-}
-
-.game__cart-article {
-  border-radius: 30px;
-  background-color: #fff;
-}
-
-.game__cart-href:hover {
-  transform: scale(1.1);
-  transition: all 0.3s;
-  z-index: 0;
-}
-
-.game__cart-box {
-  width: 314px;
-  display: flex;
-  flex-direction: column;
-  padding: 29px 32px;
-}
-
 .game__block {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
-.game__cart-number {
+.game__block-href {
+  z-index: 1;
+  text-decoration: none;
+}
+
+.game__block-href:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+  z-index: 0;
+}
+
+.game__container {
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.game__container-img {
+  border-radius: 30px;
+}
+
+.game__container-box {
+  width: 314px;
+  display: flex;
+  flex-direction: column;
+  padding: 29px 32px;
+}
+
+.game__container-number {
   color: rgb(32, 32, 39);
   font-size: 16px;
   font-weight: 500;
@@ -323,12 +329,12 @@ header {
   width: 76px;
 }
 
-.game__cart-numbers {
+.game__container-numbers {
   display: flex;
   justify-content: center;
 }
 
-.game__cart-text {
+.game__container-text {
   color: rgb(32, 32, 39);
   font-weight: 700;
   line-height: 39px;
@@ -337,14 +343,10 @@ header {
   padding-bottom: 7px;
 }
 
-.game__cart-textbig {
+.game__container-textbig {
   font-size: 32px;
   font-weight: 700;
   line-height: 39px;
-}
-
-.game__cart-img {
-  border-radius: 30px;
 }
 
 .mini-games {
