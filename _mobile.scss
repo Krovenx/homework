@@ -14,6 +14,7 @@
         padding-top: 147px;
 
         .header__start {
+            text-align: center;
             padding: 0px 57px;
 
             &-heading {
@@ -59,49 +60,47 @@
     }
 
     .mini-games {
-        padding-bottom: 48px !important;
-        background-image: none;
-    }
+        padding-bottom: 48px;
 
-    .mini-games__game {
-        flex-wrap: wrap;
-        max-width: 343px;
-    }
+        &__game {
+            flex-wrap: wrap;
+            max-width: 343px;
+        }
 
-    .mini-games__game-img {
-        max-width: 343px;
-    }
+        .mini-games__game-img {
+            max-width: 343px;
+        }
 
-    .mini-games__title {
-        padding-bottom: 20px;
-        width: 91%;
-        font-size: 40px;
-        line-height: 49px;
-    }
+        .mini-games__title {
+            padding-bottom: 20px;
+            width: 91%;
+            font-size: 40px;
+            line-height: 49px;
+        }
 
-    .mini-games__game-box {
-        padding: 24px 29px;
-    }
+        .mini-games__game-box {
+            padding: 24px 29px;
+        }
 
-    .mini-games__game-heading {
-        padding-bottom: 14px;
-        font-size: 32px;
-        line-height: 39px;
-    }
+        .mini-games__game-heading {
+            padding-bottom: 14px;
+            font-size: 32px;
+            line-height: 39px;
+        }
 
-    .mini-games__game-text {
-        margin-bottom: 31px;
-        font-size: 16px;
-        line-height: 20px;
-    }
+        .mini-games__game-text {
+            margin-bottom: 31px;
+            font-size: 16px;
+            line-height: 20px;
+        }
 
-    .mini-games__game-button {
-        margin-bottom: 6px;
-        font-size: 16px;
-        line-height: 141.69%;
-        width: 285px;
+        .mini-games__game-button {
+            margin-bottom: 6px;
+            font-size: 16px;
+            line-height: 141.69%;
+            width: 285px;
+        }
     }
-
 
     .game {
         display: none;
