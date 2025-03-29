@@ -29,3 +29,14 @@ function printsSquare(number1) {
 }
 printSquare(8);
 
+let age = prompt("Сколько вам лет");
+age = Number(age);
+if (age < 0) {
+    alert('Вы ввели неправильное значение');
+}else if (age >= 0 && age <= 12) {
+    alert('Привет, друг!');
+}
+else{
+    alert('Добра пожаловать');
+}
+
