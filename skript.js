@@ -51,3 +51,17 @@ function multiplyNumbers(a ,b) {
 
 console.log(multiplyNumbers('qwer',5));
 console.log(multiplyNumbers('5',5));
+
+function printNumber () {
+const userNumber = prompt("Назовите число");
+const number = Number(userNumber);
+if (isNaN(number)) {
+    return 'Переданный параметр не является числом';
+}
+const n  = number ** 3;
+return `${number} В кубе равняется ${n}`;
+}
+const result = printNumber();
+console.log(result);
+
+
