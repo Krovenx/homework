@@ -64,4 +64,24 @@ return `${number} В кубе равняется ${n}`;
 const result = printNumber();
 console.log(result);
 
+function getRectangleArea() {
+    return this.radius * this.radius;
+}
+function getRectanglePerimeter () {
+    return this.radius * 2 + this.radius * 2;
+}
+const circle1 = {
+    radius: 50,
+    getArea: getRectangleArea,
+    getPerimeter: getRectanglePerimeter,
+};
+const circle2 = {
+    radius: 40,
+    getArea: getRectangleArea,
+    getPerimeter: getRectanglePerimeter,
+};
 
+console.log('Площадь круга: ',circle1.getArea());
+console.log('Периметр окружности: ',circle1.getPerimeter());
+console.log('Площадь круга: ',circle2.getArea());
+console.log('Периметр окружности: ',circle2.getPerimeter());
