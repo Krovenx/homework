@@ -204,8 +204,9 @@ header {
   background: rgb(247, 247, 247);
   display: flex;
   padding-left: 15px;
-  padding-top: 8px;
-  width: 76px;
+  padding-top: 7px;
+  width: 30%;
+  height: 27px;
 }
 
 .game__numbers {
@@ -218,7 +219,7 @@ header {
   font-weight: 700;
   line-height: 39px;
   font-size: 32px;
-  padding-top: 25px;
+  padding-top: 16px;
   padding-bottom: 7px;
 }
 
