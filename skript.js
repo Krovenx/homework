@@ -40,7 +40,7 @@ else {
     alert('Добра пожаловать');
 }
 
-function multiplyNumbers(a ,b) {
+function multiplyNumbers(a, b) {
     const number1 = Number(a);
     const number2 = Number(b);
     if (isNaN(number1) || isNaN(number2)) {
@@ -49,17 +49,17 @@ function multiplyNumbers(a ,b) {
     return number1 * number2;
 }
 
-console.log(multiplyNumbers('qwer',5));
-console.log(multiplyNumbers('5',5));
+console.log(multiplyNumbers('qwer', 5));
+console.log(multiplyNumbers('5', 5));
 
-function printNumber () {
-const userNumber = prompt("Назовите число");
-const number = Number(userNumber);
-if (isNaN(number)) {
-    return 'Переданный параметр не является числом';
-}
-const n  = number ** 3;
-return `${number} В кубе равняется ${n}`;
+function printNumber() {
+    const userNumber = prompt("Назовите число");
+    const number = Number(userNumber);
+    if (isNaN(number)) {
+        return 'Переданный параметр не является числом';
+    }
+    const n = number ** 3;
+    return `${number} В кубе равняется ${n}`;
 }
 const result = printNumber();
 console.log(result);
@@ -67,7 +67,7 @@ console.log(result);
 function getRectangleArea() {
     return this.radius * this.radius;
 }
-function getRectanglePerimeter () {
+function getRectanglePerimeter() {
     return this.radius * 2 + this.radius * 2;
 }
 const circle1 = {
@@ -81,7 +81,39 @@ const circle2 = {
     getPerimeter: getRectanglePerimeter,
 };
 
-console.log('Площадь круга: ',circle1.getArea());
-console.log('Периметр окружности: ',circle1.getPerimeter());
-console.log('Площадь круга: ',circle2.getArea());
-console.log('Периметр окружности: ',circle2.getPerimeter());
+console.log('Площадь круга: ', circle1.getArea());
+console.log('Периметр окружности: ', circle1.getPerimeter());
+console.log('Площадь круга: ', circle2.getArea());
+console.log('Периметр окружности: ', circle2.getPerimeter());
+
+function getRandomNumber(min = 1, max = 100) {
+    if (min > max) [min, max] = [max, min];
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function guessRandomNumber() {
+    const randomNumber = getRandomNumber(1, 100);
+    let attempts = 0;
+    let guess;
+    while (true) {
+        guess = prompt('Угадай число от 1 до 100');
+        attempts++;
+        if (guess > 100) {
+            alert('Больше числа 100 не должно');
+        } else if (guess < 1) {
+            alert('Меньше числа 1 не должно быть');
+        }
+        if (guess === null) {
+            alert('Игра окончена. случайное число: ' + randomNumber);
+            return;
+        }
+        guess = Number(guess);
+        if (guess < randomNumber) {
+            alert('Больше');
+        } else if (guess > randomNumber) {
+            alert('Меньше');
+        } else {
+            alert(`Угадал, случайное число было: ${randomNumber}\n Попыток: ${attempts}`);
+            break;
+        }
+    }
+}
