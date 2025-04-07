@@ -16,18 +16,18 @@ let manyNum = [
     [1, 1, 1],
     [1, 1, 1]
 ];
-for (let item of manyNum ) {
+for (let item of manyNum) {
     for (let i = 0; i < item.length; i++) {
         if (i === 0) {
             console.log(`Массивы ${item[i]}`);
-        }else {
-            console.log (`\t ${item[i]}`);
+        } else {
+            console.log(`\t ${item[i]}`);
         }
     }
 }
 
 let num5 = [1, 1, 1];
-num5.push('2','2','2');
+num5.push('2', '2', '2');
 console.log(num5);
 
 const arr = [9, 8, 7, 'a', 6, 5];
@@ -39,13 +39,21 @@ const arr7 = [9, 8, 7, 6, 5];
 const guess = prompt("угадай число");
 if (arr7.includes(Number(guess))) {
     alert("Угадал");
-}else {
+} else {
     alert("Не угадал");
 }
 
 let str = 'abcdef';
 let reverseStr = str.split('').reverse().join('');
 console.log(reverseStr);
+
+
+const arr1 = [
+    [1, 2, 3],
+    [4, 5, 6]
+]
+const spreadArr = [...arr1[0], ...arr1[1]];
+console.log(spreadArr);
 
 
 
