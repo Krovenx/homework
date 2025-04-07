@@ -30,3 +30,9 @@ let num5 = [1, 1, 1];
 num5.push('2','2','2');
 console.log(num5);
 
+const arr = [9, 8, 7, 'a', 6, 5];
+const filteredArr = arr.filter(item => typeof item === 'number');
+filteredArr.sort((a, b) => a - b);
+console.log(filteredArr);
+
+
