@@ -43,6 +43,10 @@ if (arr7.includes(Number(guess))) {
     alert("Не угадал");
 }
 
+let str = 'abcdef';
+let reverseStr = str.split('').reverse().join('');
+console.log(reverseStr);
+
 
 
 
