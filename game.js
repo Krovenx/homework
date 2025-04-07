@@ -29,3 +29,41 @@ function guessRandomNumber() {
         }
     }
 }
+
+function generatorRandomProblems() {
+    const randomOperation = Math.floor(Math.random() * 4);
+    let num1, num2, question, answer;
+    switch (randomOperation) {
+        case 0:
+            num1 = Math.floor(Math.random() * 100) + 1;
+            num2 = Math.floor(Math.random() * 100) + 1;
+            question = `${num1} + ${num2}`;
+            answer = num1 - num2;
+            break;
+        case 1:
+            num1 = Math.floor(Math.random() * 100) + 1;
+            num2 = Math.floor(Math.random() * 100) + 1;
+            question = `${num1} - ${num2}`;
+            answer = num1 - num2;
+        case 2:
+            num1 = Math.floor(Math.random() * 100) + 1;
+            num2 = Math.floor(Math.random() * 100) + 1;
+            question = `${num1} * ${num2}`;
+            answer = num1 * num2;
+        case 3:
+            num1 = Math.floor(Math.random() * 10) + 1;
+            answer = Math.floor(Math.random() * 100) + 1;
+            num2 = answer * num1;
+            question = `${num1} / ${num2}`;
+        default:
+            break;
+    }
+    return { question, answer };
+}
+for (let i = 1; i <= 10; i++) {
+    const problem = generatorRandomProblems();
+    const userAnswer = prompt(`Введите правильный ответ \n Задача ${i}: ${problem.question} = ?`);
+    if (userAnswer = answer) {
+        alert('Не правильно');
+    }
+}
