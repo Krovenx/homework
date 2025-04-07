@@ -35,4 +35,14 @@ const filteredArr = arr.filter(item => typeof item === 'number');
 filteredArr.sort((a, b) => a - b);
 console.log(filteredArr);
 
+const arr7 = [9, 8, 7, 6, 5];
+const guess = prompt("угадай число");
+if (arr7.includes(Number(guess))) {
+    alert("Угадал");
+}else {
+    alert("Не угадал");
+}
+
+
+
 
