@@ -26,4 +26,7 @@ for (let item of manyNum ) {
     }
 }
 
+let num5 = [1, 1, 1];
+num5.push('2','2','2');
+console.log(num5);
 
