@@ -80,4 +80,18 @@ function negativeNumbers(array) {
 console.log(negativeNumbers([1, 2, 3, -4, 5, -6, -7, -8, 9]));
 
 
-
+function randomNumbb() {
+    return Math.floor(Math.random() * 10);
+}
+const arr13 = [];
+for (let i = 0; i < 10; i++) {
+    arr13.push(randomNumbb()); 
+}
+console.log(arr13);
+const evenArr = [];
+for (let i = 0; i < arr13.length; i++) {
+    if (arr13[i] % 2 === 0) {
+        evenArr.push(arr13[i]);
+    }  
+}
+console.log(evenArr);
