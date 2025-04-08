@@ -55,14 +55,20 @@ const arr1 = [
 const spreadArr = [...arr1[0], ...arr1[1]];
 console.log(spreadArr);
 
-const num10 = Array.from({length: 5}, () => Math.floor(Math.random() * 10) + 1);
+const num10 = Array.from({ length: 5 }, () => Math.floor(Math.random() * 10) + 1);
 console.log('Исходный массив:', num10);
 for (let i = 0; i < num10.length - 1; i++) {
-  const current = num10[i];
-  const next = num10[i + 1];
-  const sum = current + next;
-  console.log(`Итерация ${i + 1}: ${current} + ${next} = ${sum}`);
+    const current = num10[i];
+    const next = num10[i + 1];
+    const sum = current + next;
+    console.log(`Итерация ${i + 1}: ${current} + ${next} = ${sum}`);
 }
+
+function squareNumbers(arr) {
+    return arr.map(item => item ** 2);
+}
+console.log(squareNumbers([1,2,3]));
+
 
 
 
