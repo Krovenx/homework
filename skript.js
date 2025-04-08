@@ -95,3 +95,13 @@ for (let i = 0; i < arr13.length; i++) {
     }  
 }
 console.log(evenArr);
+
+function randomNumbbi() {
+    return Math.floor(Math.random() * 10);
+}
+const arr15 = [];
+for (let i = 0; i < 10; i++) {
+    arr15.push(randomNumbbi()); 
+}
+console.log(arr15);
+console.log(arr15.reduce((a,b => a + b) / arr15.lenght));
