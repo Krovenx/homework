@@ -74,7 +74,10 @@ function getlength(arr) {
 }
 console.log(getlength(['строка', 'длина']));
 
-
+function negativeNumbers(array) {
+    return array.filter(item => item < 0);
+}
+console.log(negativeNumbers([1, 2, 3, -4, 5, -6, -7, -8, 9]));
 
 
 
