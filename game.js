@@ -34,36 +34,59 @@ function generatorRandomProblems() {
     const randomOperation = Math.floor(Math.random() * 4);
     let num1, num2, question, answer;
     switch (randomOperation) {
-        case 0:
-            num1 = Math.floor(Math.random() * 100) + 1;
-            num2 = Math.floor(Math.random() * 100) + 1;
+        case 0: // Сложение
+            num1 = Math.floor(Math.random() * 10) + 1;
+            num2 = Math.floor(Math.random() * 10) + 1;
             question = `${num1} + ${num2}`;
-            answer = num1 - num2;
+            answer = num1 + num2;
             break;
-        case 1:
-            num1 = Math.floor(Math.random() * 100) + 1;
-            num2 = Math.floor(Math.random() * 100) + 1;
+        case 1: // Вычитание
+            num1 = Math.floor(Math.random() * 10) + 1;
+            num2 = Math.floor(Math.random() * 10) + 1;
             question = `${num1} - ${num2}`;
             answer = num1 - num2;
-        case 2:
-            num1 = Math.floor(Math.random() * 100) + 1;
-            num2 = Math.floor(Math.random() * 100) + 1;
+            break;
+        case 2: // Умножение
+            num1 = Math.floor(Math.random() * 10) + 1;
+            num2 = Math.floor(Math.random() * 10) + 1;
             question = `${num1} * ${num2}`;
             answer = num1 * num2;
-        case 3:
-            num1 = Math.floor(Math.random() * 10) + 1;
-            answer = Math.floor(Math.random() * 100) + 1;
-            num2 = answer * num1;
+            break;
+        case 3: // Деление
+            num2 = Math.floor(Math.random() * 10) + 1;
+            answer = Math.floor(Math.random() * 10) + 1;
+            num1 = num2 * answer;
             question = `${num1} / ${num2}`;
-        default:
             break;
     }
     return { question, answer };
 }
-for (let i = 1; i <= 10; i++) {
-    const problem = generatorRandomProblems();
-    const userAnswer = prompt(`Введите правильный ответ \n Задача ${i}: ${problem.question} = ?`);
-    if (userAnswer = answer) {
-        alert('Не правильно');
+
+function startProblems() {
+    while (true) {
+        const problem = generatorRandomProblems();
+        let attempts = 0;
+        while (true) {
+            const userAnswer = prompt(`Введите правильный ответ \n Задача: ${problem.question} = ?`);
+            if (userAnswer === null) {
+                alert("Игра окончена");
+                return;
+            }
+            const parsedAnswer = parseFloat(userAnswer);
+            if (isNaN(parsedAnswer)) {
+                alert("Введите число!");
+                continue;
+            }
+            if (parsedAnswer !== problem.answer) {
+                attempts++;
+                alert('Не правильно');
+            } else {
+                alert(`Правильно! Ответ: ${problem.answer}, Попыток: ${attempts}`);
+                break;
+            }
+        }
     }
 }
+
+
+
