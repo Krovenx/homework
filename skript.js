@@ -67,7 +67,13 @@ for (let i = 0; i < num10.length - 1; i++) {
 function squareNumbers(arr) {
     return arr.map(item => item ** 2);
 }
-console.log(squareNumbers([1,2,3]));
+console.log(squareNumbers([1, 2, 3]));
+
+function getlength(arr) {
+    return arr.map(item => item.length);
+}
+console.log(getlength(['строка', 'длина']));
+
 
 
 
