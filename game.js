@@ -97,3 +97,40 @@ function turnText() {
     const reversedText = userInput.split("").reverse().join("");
     alert(`Перевернутый текст: ${reversedText}`);
 }
+
+function gameQuiz() {
+    alert("Игра Вопрос-Ответ. Попробуйте ответить правильно на 3 вопроса.");
+    const quiz = [
+        {
+            question: "Какой цвет небо?",
+            options: ["1. Красный", "2. Синий", "3. Зеленый"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько дней в неделе?",
+            options: ["1. Шесть", "2. Семь", "3. Восемь"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько у человека пальцев на одной руке?",
+            options: ["1. Четыре", "2. Пять", "3. Шесть"],
+            correctAnswer: 2
+        }
+    ];
+
+    let correctCount = 0;
+
+    for (const item of quiz) {
+        const userAnswer = prompt(`${item.question}\n${item.options.join("\n")}`);
+        if (userAnswer === null) {
+            alert("Игра окончена");
+            return;
+        }
+
+        if (parseInt(userAnswer) === item.correctAnswer) {
+            correctCount++;
+        }
+    }
+
+    alert(`Вы ответили правильно на ${correctCount} из ${quiz.length} вопросов.`);
+}
