@@ -88,5 +88,12 @@ function startProblems() {
     }
 }
 
-
-
+function turnText() {
+    const userInput = prompt("Введите текст, который нужно перевернуть:");
+    if (userInput === null) {
+        alert("Игра окончена");
+        return;
+    }
+    const reversedText = userInput.split("").reverse().join("");
+    alert(`Перевернутый текст: ${reversedText}`);
+}
