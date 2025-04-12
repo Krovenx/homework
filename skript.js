@@ -1,11 +1,8 @@
-function generateRandomArray(maxNumber) {
-    const arrayLength = Math.floor(maxNumber / 2);
-    const randomArray = [];
-    for (let i = 0; i < arrayLength; i++) {
-      randomArray.push(Math.floor(Math.random() * (maxNumber + 1)));
+function getRandomInRange(min, max) {
+    if (min > max) {
+        [min, max] = [max, min];
     }
-    return randomArray;
-  }
-const maxNumber = 10;
-const randomArray = generateRandomArray(maxNumber);
-console.log(randomArray);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+const randomNumber = getRandomInRange(5, 15);
+console.log("Случайное число в диапазоне от 5 до 15:", randomNumber);
