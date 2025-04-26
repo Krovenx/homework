@@ -1,17 +1,8 @@
-function isPositive(number) {
-    return number > 0;
-}
-function isMale(person) {
-    return person.gender === 'male';
-}
-function filter(array, ruleFunction) {
-    const result = [];
-    for (let i = 0; i < array.length; i++) {
-        if (ruleFunction(array[i])) {
-            result.push(array[i]);
-        }
-    }
-    return result;
-}
+const interval = setInterval(() => {
+    console.log(new Date());
+}, 30000);
+setTimeout(() => {
+   clearInterval(intervalId); 
+   console.log('Время прошло');
 
-console.log(filter([3, -4, 1, 9], isPositive));
+}, 30000);
