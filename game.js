@@ -134,3 +134,31 @@ function gameQuiz() {
 
     alert(`Вы ответили правильно на ${correctCount} из ${quiz.length} вопросов.`);
 }
+
+function gameKNB() {
+    const user = prompt("Камень, ножницы, бумага? (введите 'камень', 'ножницы' или 'бумага'");
+    if (user === null) {
+        alert("Игра окончена");
+        return;
+    }
+    const userChoice = user.toLowerCase();
+    const options = ["камень", "ножницы", "бумага"];
+    if (!options.includes(userChoice)) {
+        alert("Вы ввели некорректное значение!\nПожалуйста, введите одно из: 'камень', 'ножницы' или 'бумага'");
+        return gameKNB();
+    }
+    const computer = options[Math.floor(Math.random() * options.length)];
+    if (userChoice === computer) {
+        alert(`Компьютер выбрал: ${computer}\nНичья!`);
+    } else if (
+        (userChoice === "камень" && computer === "ножницы") ||
+        (userChoice === "ножницы" && computer === "бумага") ||
+        (userChoice === "бумага" && computer === "камень")
+    ) {
+        alert(`Компьютер выбрал: ${computer}\nВы выиграли!`);
+    } else {
+        alert(`Компьютер выбрал: ${computer}\nВы проиграли!`);
+    }
+
+    alert("Игра окончена\nВыбор компьютера: " + computer + "\nВаш выбор: " + user);
+}
