@@ -1,8 +1,11 @@
-function delayForSecond(callback) {
-    setTimeout(callback,1000);
-    callback();
+function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log("прошла одна секунда");
+        if (cb) { cb(); }
+    }, 1000)
 }
 
-delayForSecond(function() {
-    console.log('Привет, Глеб');
-})
+function sayHi (name) {
+    console.log(`Привет, ${name}!`);
+}
+delayForSecond(() => sayHi('Глеб'));
