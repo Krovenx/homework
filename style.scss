@@ -3,18 +3,32 @@
     margin: 0;
 }
 
+
+
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
 
 body {
+
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-header {
+.right {
+    display: flex;
+}
 
+header {
+    overflow: hidden;
+    background-image: url(img/bigzvezda.svg), url(img/minzvezdaright.svg), url(img/minzvezdarightRGB.svg), url(img/bigzvezdaRGB.svg), url(img/minzvezda.svg);
+    background-repeat: no-repeat;
+    background-position: top -331px right -491px,
+        right 344px top 568px,
+        right 456px top 538px,
+        left 64px top 95px,
+        left 156px top 70px;
     width: 100%;
     padding-top: 196px;
     font-family: Montserrat;
@@ -44,6 +58,12 @@ header {
 
 .header__start-span {
     font-weight: 600;
+}
+
+.header__start-box {
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
 }
 
 .header__start-button {
@@ -76,6 +96,7 @@ header {
     background: rgb(188, 236, 48);
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .header__animal-scroll {
@@ -119,14 +140,16 @@ header {
 
 
 .game {
-    padding-bottom: 50px;
     background: rgb(32, 32, 39);
+    position: relative;
+    background-image: url(img/GameBigZvezda.png), url(img/GameMinLeft.png), url(img/GameBigLeft.png);
+    background-position:
+        calc(100% + 110px) 110px,
+        calc(1% + 14px) 770px,
+        calc(1% + 31px) 824px;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
     font-family: Montserrat;
-}
-
-.game__start {
-    width: 788px;
-
 }
 
 .game__start-heading {
@@ -136,6 +159,8 @@ header {
     font-size: 64px;
     font-weight: 700;
     line-height: 78px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .game__start-text {
@@ -152,51 +177,40 @@ header {
     padding-top: 72px;
 }
 
-.game__cart-href {
+.game__block {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.game__block-href {
     z-index: 1;
     text-decoration: none;
 }
 
-.game__cart-article {
-    border-radius: 30px;
-    background-color: #fff;
-}
-
-.game__cart-href:hover {
+.game__block-href:hover {
     transform: scale(1.1);
     transition: all 0.3s;
     z-index: 0;
 }
 
-
-
-.game__cart-box {
-    width: 314px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding: 48px 30px;
+.game__container {
+    border-radius: 30px;
+    background-color: #fff;
 }
 
-.game__cart-text {
-    color: rgb(32, 32, 39);
-    font-weight: 700;
-    line-height: 39px;
-    font-size: 32px;
-
-}
-
-.game__cart-textbig {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 39px;
-}
-
-.game__cart-img {
+.game__img {
     border-radius: 30px;
 }
 
-.game__cart-number {
+.game__box {
+    width: 314px;
+    display: flex;
+    flex-direction: column;
+    padding: 29px 32px;
+}
+
+.game__number {
     color: rgb(32, 32, 39);
     font-size: 16px;
     font-weight: 500;
@@ -204,33 +218,74 @@ header {
     border-radius: 52.58px;
     background: rgb(247, 247, 247);
     display: flex;
-    padding-left: 18px;
+    padding-left: 15px;
+    padding-top: 7px;
+    width: 30%;
+    height: 27px;
 }
 
+.game__numbers {
+    display: flex;
+    justify-content: center;
+}
+
+.game__text {
+    color: rgb(32, 32, 39);
+    font-weight: 700;
+    line-height: 39px;
+    font-size: 32px;
+    padding-top: 16px;
+    padding-bottom: 7px;
+}
+
+.game__textbig {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+}
+
+
 .mini-games {
+    position: relative;
+    align-items: center;
     font-family: Montserrat;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    row-gap: 32px;
+    row-gap: 30px;
     background: rgb(32, 32, 39);
     padding-bottom: 144px;
+    background-image: url(img/MiniGameZvezda.png), url(img/GameMinLeft.png), url(img/MiniGameBigZvedabottom.png), url(img/MiniGameMinzvedabottom.png);
+    background-position:
+        calc(100% - 50px) 130px,
+        calc(100% - 128px) 96px,
+        calc(100% - 51px) 3365px,
+        calc(100% - 150px) 3412px;
+
+    background-repeat: no-repeat;
+
 }
 
-.mini-games__game-title {
-    padding-bottom: 72px;
+.mini-games__box {
+    display: flex;
+}
+
+.mini-games__title {
+    padding-bottom: 42px;
     padding-top: 46px;
     color: rgb(255, 255, 255);
     font-size: 64px;
     font-weight: 700;
     line-height: 78px;
+    width: 100%;
 }
 
 .mini-games__game {
     display: flex;
     background-color: #fff;
-    border-radius: 55px;
-
+    border-radius: 48px;
+    width: 100%;
+    justify-content: space-between
 }
 
 .mini-games__game-heading {
@@ -240,10 +295,11 @@ header {
     font-size: 48px;
     font-weight: 700;
     line-height: 59px;
+    width: 100%;
 }
 
 .mini-games__game-text {
-    max-width: 457px;
+    margin-bottom: 36px;
     color: rgb(32, 32, 39);
     font-size: 24px;
     font-weight: 400;
@@ -251,17 +307,18 @@ header {
 }
 
 .mini-games__game-box {
-    width: 504px;
+
     padding: 48px 48px;
 }
 
 .mini-games__game-button {
+    font-family: Montserrat;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 16px 28px;
-    margin: 36px 0px;
+    padding: 15px 28px;
+
     border-radius: 60px;
     background: rgb(32, 32, 39);
     color: rgb(255, 255, 255);
@@ -279,8 +336,10 @@ header {
 
 .mini-games__game-img {
     width: 600px;
-    border-radius: 50px;
+    border-radius: 48px;
 }
+
+.mini-games__game-imgbox {}
 
 .end {
     color: rgb(0, 0, 0);
@@ -296,6 +355,7 @@ header {
 }
 
 .end-text {
-
-    margin: 60px 0px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
+@import 'mobile';

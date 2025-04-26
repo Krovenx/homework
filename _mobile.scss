@@ -1,0 +1,160 @@
+@media (max-width:767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        background-image: url(img/MobileBigZvezda.png), url(img/MobileZvezdaMInLeft.png), url(img/MObileZvezdaRGBLeft.png), url(img/MobileZvezdaMinBottom.png), url(img/MObileZvezdabottom.png);
+        background-position: calc(100% + 85px) -85px,
+            calc(1% + 94px) 64px,
+            calc(1% + 40px) 96px,
+            calc(40% + 132px) 556px,
+            calc(51% + 133px) 579px;
+        padding-top: 147px;
+
+        .header__start {
+            text-align: center;
+            padding: 0px 57px;
+
+            &-heading {
+                font-size: 40px;
+                line-height: 49px;
+            }
+
+            &-text {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            &-button {
+                align-items: center;
+                padding: 0px 20px;
+                height: 55px;
+                font-size: 16px;
+                line-height: 141.69%;
+            }
+
+            &-box {
+                padding-top: 12px;
+                display: flex;
+            }
+        }
+
+        .header__animal {
+            height: 51px;
+            margin-top: 131px;
+
+            &-item {
+                font-size: 16px;
+            }
+
+            &-img {
+                height: 19px;
+            }
+        }
+    }
+
+    .right {
+        flex-direction: column-reverse
+    }
+
+    .mini-games {
+        padding-bottom: 48px;
+
+        &__game {
+            flex-wrap: wrap;
+            max-width: 343px;
+        }
+
+        .mini-games__game-img {
+            max-width: 343px;
+        }
+
+        .mini-games__title {
+            padding-bottom: 20px;
+            width: 91%;
+            font-size: 40px;
+            line-height: 49px;
+        }
+
+        .mini-games__game-box {
+            padding: 24px 29px;
+        }
+
+        .mini-games__game-heading {
+            padding-bottom: 14px;
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        .mini-games__game-text {
+            margin-bottom: 31px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        .mini-games__game-button {
+            margin-bottom: 6px;
+            font-size: 16px;
+            line-height: 141.69%;
+            width: 285px;
+        }
+    }
+
+    .game {
+        display: none;
+
+        .game__start {
+            display: none;
+        }
+    }
+
+    .end {
+        &-text {
+            font-size: 16px;
+            line-height: 20px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width:424px) {
+    .mini-games {
+        &__game {
+            flex-wrap: wrap;
+            max-width: 343px;
+        }
+
+        .mini-games__game-img {
+            max-width: 343px;
+        }
+
+        .mini-games__title {
+            font-size: 40px;
+            line-height: 49px;
+        }
+
+        .mini-games_game-box {
+            width: 314px;
+
+
+        }
+
+        .mini-games__game-heading {
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        .mini-games__game-text {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        .mini-games__game-button {
+            font-size: 16px;
+            line-height: 141.69%;
+        }
+    }
+}
