@@ -1,7 +1,17 @@
-const people = [
-    { name: 'Глеб', age: 29 },
-    { name: 'Анна', age: 17 },
-    { name: 'Олег', age: 7 },
-    { name: 'Оксана', age: 47 }
- ];
- console.log(people.sort((a, b) => a.age - b.age));
+function isPositive(number) {
+    return number > 0;
+}
+function isMale(person) {
+    return person.gender === 'male';
+}
+function filter(array, ruleFunction) {
+    const result = [];
+    for (let i = 0; i < array.length; i++) {
+        if (ruleFunction(array[i])) {
+            result.push(array[i]);
+        }
+    }
+    return result;
+}
+
+console.log(filter([3, -4, 1, 9], isPositive));
