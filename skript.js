@@ -25,14 +25,14 @@ function filter(array, ruleFunction) {
 }
 
  // 3 Задание
-const interval = setInterval(() => {
+const intervalId = setInterval(() => {
     console.log(new Date());
-}, 30000);
+}, 3000); 
 setTimeout(() => {
-   clearInterval(intervalId); 
-   console.log('Время прошло');
-
+    clearInterval(intervalId);
+    console.log('30 секунд прошло');
 }, 30000);
+console.log(new Date());
 
  // 4 Задание
 function delayForSecond(callback) {
