@@ -16,6 +16,9 @@
 
     <p class="paragraf">2 Задание: Меняет цвет текста при клике</p>
     <button class="btn2">Изменить цвет</button>
+
+    <h1 class="text2">3 Задание: Изменяет текст при клике</h1>
+    <button class="btn3">Изменить текст</button>
     <script>// Задание 1: Скрывает текст при клике
 
         const textEl = document.querySelector('.text');
@@ -32,14 +35,27 @@
 
         // Задание 2: Меняет цвет текста при клике
 
-    const paragrafEl = document.querySelector('.paragraf');
-    const btn2El = document.querySelector('.btn2');
+        const paragrafEl = document.querySelector('.paragraf');
+        const btn2El = document.querySelector('.btn2');
 
-    btn2El.addEventListener('click', () => {
-        if (paragrafEl.style.color === 'blue') {
-            paragrafEl.style.color = 'black';
+        btn2El.addEventListener('click', () => {
+            if (paragrafEl.style.color === 'blue') {
+                paragrafEl.style.color = 'black';
+            } else {
+                paragrafEl.style.color = 'blue';
+            }
+        });
+
+        // Задание 3: Меняет текст в заголовке
+
+    const text2El = document.querySelector('.text2');
+    const originalText2 = text2El.textContent;
+    const btn3El = document.querySelector('.btn3');
+    btn3El.addEventListener('click', () => {
+        if (text2El.textContent === '3 Задание: Изменяет текст при клике') {
+            text2El.textContent = 'Привет мир!';
         } else {
-            paragrafEl.style.color = 'blue';
+            text2El.textContent = originalText2;
         }
     });
     </script>
