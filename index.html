@@ -26,6 +26,9 @@
 <p class="desc">5 Задание 1</p>
 <p class="description2">5 Задание 2</p>
 <p class="description2">5 Задание 3</p>
+
+<button class="btnParagraph">Добавить элемент</button>
+<div class="content"></div>
     <script>// Задание 1: Скрывает текст при клике
 
         const textEl = document.querySelector('.text');
@@ -80,6 +83,16 @@
         element.textContent = 'Новый текст';
     });
     console.log(description2El);
+    
+     // 6 задание: Добавляет в конец страницы новый абзац с текстом "Новый абзац"
+     const btnParagraph = document.querySelector('.btnParagraph');
+    const contentEl = document.querySelector('.content');
+    btnParagraph.addEventListener('click', () => {
+        const newParagraphEl = document.createElement('p');
+        newParagraphEl.textContent = '6 задание: создание нового абзаца';
+        newParagraphEl.classList.add('newParagraph');
+        contentEl.appendChild(newParagraphEl);
+    })
     </script>
 
     <header class="header">
