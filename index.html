@@ -13,6 +13,9 @@
 <body>
     <h1 class="text">1 Задание: Скрывает текст при клике</h1>
     <button class="btn">Скрыть</button>
+
+    <p class="paragraf">2 Задание: Меняет цвет текста при клике</p>
+    <button class="btn2">Изменить цвет</button>
     <script>// Задание 1: Скрывает текст при клике
 
         const textEl = document.querySelector('.text');
@@ -26,7 +29,21 @@
                 textEl.textContent = '';
             }
         });
+
+        // Задание 2: Меняет цвет текста при клике
+
+    const paragrafEl = document.querySelector('.paragraf');
+    const btn2El = document.querySelector('.btn2');
+
+    btn2El.addEventListener('click', () => {
+        if (paragrafEl.style.color === 'blue') {
+            paragrafEl.style.color = 'black';
+        } else {
+            paragrafEl.style.color = 'blue';
+        }
+    });
     </script>
+
     <header class="header">
         <div class="header__start center">
             <h3 class="header__start-heading">Добро пожаловать<br> на мой сайт мини-игр</h3>
