@@ -11,6 +11,22 @@
 </head>
 
 <body>
+    <h1 class="text">1 Задание: Скрывает текст при клике</h1>
+    <button class="btn">Скрыть</button>
+    <script>// Задание 1: Скрывает текст при клике
+
+        const textEl = document.querySelector('.text');
+        const btnEl = document.querySelector('.btn');
+        const originalText = textEl.textContent;
+
+        btnEl.addEventListener('click', () => {
+            if (textEl.textContent === '') {
+                textEl.textContent = originalText;
+            } else {
+                textEl.textContent = '';
+            }
+        });
+    </script>
     <header class="header">
         <div class="header__start center">
             <h3 class="header__start-heading">Добро пожаловать<br> на мой сайт мини-игр</h3>
