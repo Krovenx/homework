@@ -22,6 +22,10 @@
 
     <h1 class="discription">4 задание: изменяет этот текст на "Измененный текст"</h1>
 <p class="discription">4 задание: изменяет этот текст на "Измененный текст"</p>
+
+<p class="desc">5 Задание 1</p>
+<p class="description2">5 Задание 2</p>
+<p class="description2">5 Задание 3</p>
     <script>// Задание 1: Скрывает текст при клике
 
         const textEl = document.querySelector('.text');
@@ -69,6 +73,13 @@
         element.textContent = 'Измененный текст';
     });
     console.log(decriptionEl);
+
+    // 5 задание: Изменяет текст с классом description2 на "Новый текст"
+    const description2El = document.querySelectorAll('.description2');
+    description2El.forEach(element => {
+        element.textContent = 'Новый текст';
+    });
+    console.log(description2El);
     </script>
 
     <header class="header">
