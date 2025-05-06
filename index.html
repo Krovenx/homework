@@ -11,103 +11,6 @@
 </head>
 
 <body>
-    <h1 class="text">1 Задание: Скрывает текст при клике</h1>
-    <button class="btn">Скрыть</button>
-
-    <p class="paragraf">2 Задание: Меняет цвет текста при клике</p>
-    <button class="btn2">Изменить цвет</button>
-
-    <h1 class="text2">3 Задание: Изменяет текст при клике</h1>
-    <button class="btn3">Изменить текст</button>
-
-    <h1 class="discription">4 задание: изменяет этот текст на "Измененный текст"</h1>
-<p class="discription">4 задание: изменяет этот текст на "Измененный текст"</p>
-
-<p class="desc">5 Задание 1</p>
-<p class="description2">5 Задание 2</p>
-<p class="description2">5 Задание 3</p>
-
-<button class="btnParagraph">Добавить элемент</button>
-<div class="content"></div>
-
-<p class="descr">7 Задание</p>
-<p class="description3">элемент 1</p>
-<p class="description3">элемент 2</p>
-<button class="remove">Удалить элемент</button>
-    <script>// Задание 1: Скрывает текст при клике
-
-        const textEl = document.querySelector('.text');
-        const btnEl = document.querySelector('.btn');
-        const originalText = textEl.textContent;
-
-        btnEl.addEventListener('click', () => {
-            if (textEl.textContent === '') {
-                textEl.textContent = originalText;
-            } else {
-                textEl.textContent = '';
-            }
-        });
-
-        // Задание 2: Меняет цвет текста при клике
-
-        const paragrafEl = document.querySelector('.paragraf');
-        const btn2El = document.querySelector('.btn2');
-
-        btn2El.addEventListener('click', () => {
-            if (paragrafEl.style.color === 'blue') {
-                paragrafEl.style.color = 'black';
-            } else {
-                paragrafEl.style.color = 'blue';
-            }
-        });
-
-        // Задание 3: Меняет текст в заголовке
-
-    const text2El = document.querySelector('.text2');
-    const originalText2 = text2El.textContent;
-    const btn3El = document.querySelector('.btn3');
-    btn3El.addEventListener('click', () => {
-        if (text2El.textContent === '3 Задание: Изменяет текст при клике') {
-            text2El.textContent = 'Привет мир!';
-        } else {
-            text2El.textContent = originalText2;
-        }
-    });
-
-    // Задание 4: Изменяют свой текст на Измененный текст
-
-    const decriptionEl = document.querySelectorAll('.discription');
-    decriptionEl.forEach(element => {
-        element.textContent = 'Измененный текст';
-    });
-    console.log(decriptionEl);
-
-    // 5 задание: Изменяет текст с классом description2 на "Новый текст"
-    const description2El = document.querySelectorAll('.description2');
-    description2El.forEach(element => {
-        element.textContent = 'Новый текст';
-    });
-    console.log(description2El);
-
-     // 6 задание: Добавляет в конец страницы новый абзац с текстом "Новый абзац"
-     const btnParagraph = document.querySelector('.btnParagraph');
-    const contentEl = document.querySelector('.content');
-    btnParagraph.addEventListener('click', () => {
-        const newParagraphEl = document.createElement('p');
-        newParagraphEl.textContent = '6 задание: создание нового абзаца';
-        newParagraphEl.classList.add('newParagraph');
-        contentEl.appendChild(newParagraphEl);
-    })
-
-     // 7 Задание: 
-     const description3El = document.querySelector('.description3');
-    const removeEl = document.querySelector('.remove');
-    removeEl.addEventListener('click', () => {
-        const description3El = document.querySelector('.description3');
-        description3El.remove();
-    });
-    </script>
-
     <header class="header">
         <div class="header__start center">
             <h3 class="header__start-heading">Добро пожаловать<br> на мой сайт мини-игр</h3>
@@ -278,7 +181,7 @@
                 <img class="mini-games__game-img" src="img/GameKNB.png" alt="Knb">
             </div>
         </article>
-        <article class="mini-games__game left">
+        <article class="mini-games__game left  box">
             <div class="mini-games__game-imgbox">
                 <img class="mini-games__game-img" src="img/GameGenerator.png" alt="Generator">
             </div>
@@ -286,7 +189,7 @@
                 <h2 id="gamestartGenerator" class="mini-games__game-heading">Генератор случайных<br> цветов</h2>
                 <p class="mini-games__game-text">Игра, в которой при клике на кнопку фон страницы меняется на случайный.
                 </p>
-                <button class="mini-games__game-button">Играть!</button>
+                <button class="mini-games__game-button btn">Играть!</button>
             </div>
         </article>
     </div>
