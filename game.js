@@ -163,3 +163,12 @@ function gameKNB() {
 
     alert("Игра окончена\nВыбор компьютера: " + computer + "\nВаш выбор: " + user);
 }
+
+const btnEl = document.querySelector('.btn');
+const boxEl = document.querySelector('.box');
+const colors = ['Black', 'White', 'Red', 'Green', 'Blue', 'Yellow', 'Pink', 'Purple', 'Orange', 'Brown'];
+btnEl.addEventListener('click', () => {
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    boxEl.style.backgroundColor = randomColor;
+    boxEl.style.transition = '0.8s';
+});
