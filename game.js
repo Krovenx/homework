@@ -73,12 +73,13 @@ function startProblems() {
                 return;
             }
             const parsedAnswer = parseFloat(userAnswer);
+            attempts++;
             if (isNaN(parsedAnswer)) {
                 alert("Введите число!");
                 continue;
             }
             if (parsedAnswer !== problem.answer) {
-                attempts++;
+                
                 alert('Не правильно');
             } else {
                 alert(`Правильно! Ответ: ${problem.answer}, Попыток: ${attempts}`);
@@ -166,7 +167,7 @@ function gameKNB() {
 
 const btnEl = document.querySelector('.btn');
 const boxEl = document.querySelector('.box');
-const colors = ['Black', 'White', 'Red', 'Green', 'Blue', 'Yellow', 'Pink', 'Purple', 'Orange', 'Brown'];
+const colors = ['rgb(255, 0, 0)', 'rgb(0, 255, 0)', 'rgb(0, 0, 255)', 'rgb(255, 255, 0)', 'rgb(255, 0, 255)', 'rgb(0, 255, 255)'];
 btnEl.addEventListener('click', () => {
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     boxEl.style.backgroundColor = randomColor;

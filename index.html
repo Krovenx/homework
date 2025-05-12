@@ -19,9 +19,36 @@
             </p>
         </div>
         <div class="header__start-box center">
-            <a class="header__start-button" href="#sroll">Поехали!</a>
+            <a class="header__start-button" href="#scroll">Поехали!</a>
         </div>
+        <script>
+            document.querySelector('.header__start-button').addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector('.game__start');
+                const targetPosition = target.getBoundingClientRect().top;
+                const startPosition = window.pageYOffset;
+                const distance = targetPosition;
+                const duration = 500;
+                let startTime = null;
 
+                function easeInOutQuad(t, b, c, d) {
+                    t /= d / 2;
+                    if (t < 1) return c / 2 * t * t + b;
+                    t--;
+                    return -c / 2 * (t * (t - 2) - 1) + b;
+                }
+
+                function animation(currentTime) {
+                    if (!startTime) startTime = currentTime;
+                    const timeElapsed = currentTime - startTime;
+                    const run = easeInOutQuad(timeElapsed, startPosition, distance, duration);
+                    window.scrollTo(0, run);
+                    if (timeElapsed < duration) requestAnimationFrame(animation);
+                }
+
+                requestAnimationFrame(animation);
+            });
+        </script>
         <section class="header__animal color">
             <div class="header__animal-scroll">
                 <p class="header__animal-item">Викторина</p>
@@ -60,12 +87,11 @@
         </section>
     </header>
     <div class="game center">
-        <section class="game__start">
-            <h3 class="game__start-heading" id="sroll">Об играх</h3>
+        <section id="scroll" class="game__start">
+            <h3 class="game__start-heading">Об играх</h3>
             <p class="game__start-text">В моей коллекции представлено 6 игр на разные темы. <br> Игры несложные — в них
                 может поиграть каждый. <br> Все игры доступны для пользования.</p>
         </section>
-
         <div class="game__cart">
             <section class="game__block">
                 <a class="game__block-href" href="#gamestartnumber">
@@ -137,14 +163,10 @@
                 <p class="mini-games__game-text">Попробуй угадать случайное<br> число от 1 до 100.</p>
                 <button onclick="guessRandomNumber()" class="mini-games__game-button">Играть!</button>
             </div>
-            <div class="mini-games__game-imgbox">
-                <img class="mini-games__game-img" src="img/guess.png" alt="Ugadai">
-            </div>
+            <img class="mini-games__game-img" src="img/guess.png" alt="Ugadai">
         </article>
         <article class="mini-games__game left">
-            <div class="mini-games__game-imgbox">
-                <img class="mini-games__game-img" src="img/GameArifmetika.png" alt="Arifmetika">
-            </div>
+            <img class="mini-games__game-img" src="img/GameArifmetika.png" alt="Arifmetika">
             <div class="mini-games__game-box">
                 <h2 id="gamestartArifmetika" class="mini-games__game-heading">Простая арифметика</h2>
                 <p class="mini-games__game-text">Попробуй решить простые арифметические задачи.</p>
@@ -157,14 +179,10 @@
                 <p class="mini-games__game-text">Попробуй ввести текст, который будет перевернут.</p>
                 <button onclick="turnText()" class="mini-games__game-button">Играть!</button>
             </div>
-            <div class="mini-games__game-imgbox">
-                <img class="mini-games__game-img" src="img/GameText.png" alt="Text">
-            </div>
+            <img class="mini-games__game-img" src="img/GameText.png" alt="Text">
         </article>
         <article class="mini-games__game left">
-            <div class="mini-games__game-imgbox">
-                <img class="mini-games__game-img" src="img/GameViktorina.png" alt="Viktorina">
-            </div>
+            <img class="mini-games__game-img" src="img/GameViktorina.png" alt="Viktorina">
             <div class="mini-games__game-box">
                 <h2 id="gamestartViktorina" class="mini-games__game-heading">Викторина</h2>
                 <p class="mini-games__game-text">Отвечай на вопросы викторины с вариантами ответов.</p>
@@ -177,14 +195,10 @@
                 <p class="mini-games__game-text">Сыграй в популярную игру против компьютера.</p>
                 <button onclick="gameKNB()" class="mini-games__game-button">Играть!</button>
             </div>
-            <div class="mini-games__game-imgbox">
-                <img class="mini-games__game-img" src="img/GameKNB.png" alt="Knb">
-            </div>
+            <img class="mini-games__game-img" src="img/GameKNB.png" alt="Knb">
         </article>
         <article class="mini-games__game left  box">
-            <div class="mini-games__game-imgbox">
-                <img class="mini-games__game-img" src="img/GameGenerator.png" alt="Generator">
-            </div>
+            <img class="mini-games__game-img" src="img/GameGenerator.png" alt="Generator">
             <div class="mini-games__game-box">
                 <h2 id="gamestartGenerator" class="mini-games__game-heading">Генератор случайных<br> цветов</h2>
                 <p class="mini-games__game-text">Игра, в которой при клике на кнопку фон страницы меняется на случайный.
@@ -193,6 +207,44 @@
             </div>
         </article>
     </div>
+    <script>
+        const gameCards = document.querySelectorAll('.game__container');
+
+        gameCards.forEach(card => {
+            card.addEventListener('click', function (e) {
+                const link = this.closest('a.game__block-href');
+                if (!link) return;
+
+                e.preventDefault();
+
+                const targetId = link.getAttribute('href').slice(1);
+                const target = document.getElementById(targetId);
+
+                if (!target) return;
+
+                const startPos = window.pageYOffset;
+                const targetPos = target.getBoundingClientRect().top;
+                const duration = 800;
+                let startTime = null;
+
+                const ease = t => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+
+                const animateScroll = (currentTime) => {
+                    if (!startTime) startTime = currentTime;
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+
+                    window.scrollTo(0, startPos + targetPos * ease(progress));
+
+                    if (progress < 1) {
+                        requestAnimationFrame(animateScroll);
+                    }
+                };
+
+                requestAnimationFrame(animateScroll);
+            });
+        });
+    </script>
     <footer class="end">
         <p class="end-text">Все права защищены</p>
     </footer>
