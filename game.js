@@ -165,11 +165,11 @@ function gameKNB() {
     alert("Игра окончена\nВыбор компьютера: " + computer + "\nВаш выбор: " + user);
 }
 
-const btnEl = document.querySelector('.btn');
-const boxEl = document.querySelector('.box');
-const colors = ['rgb(255, 0, 0)', 'rgb(0, 255, 0)', 'rgb(0, 0, 255)', 'rgb(255, 255, 0)', 'rgb(255, 0, 255)', 'rgb(0, 255, 255)'];
-btnEl.addEventListener('click', () => {
-    const randomColor = colors[Math.floor(Math.random() * colors.length)];
-    boxEl.style.backgroundColor = randomColor;
-    boxEl.style.transition = '0.8s';
+document.querySelector('.btn').addEventListener('click', function() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    document.querySelector('.btn').style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 });
+
+
