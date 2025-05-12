@@ -169,7 +169,8 @@ document.querySelector('.btn').addEventListener('click', function() {
     const r = Math.floor(Math.random() * 256);
     const g = Math.floor(Math.random() * 256);
     const b = Math.floor(Math.random() * 256);
-    document.querySelector('.btn').style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    document.querySelector('.mini-games').style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+   
 });
 
 

@@ -261,9 +261,8 @@ body {
         calc(100% - 128px) 96px,
         calc(100% - 51px) 3365px,
         calc(100% - 150px) 3412px;
-
     background-repeat: no-repeat;
-
+    transition: all 0.3s;
 }
 
 .mini-games__box {

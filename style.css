@@ -244,6 +244,7 @@ body {
   background-image: url(img/MiniGameZvezda.png), url(img/GameMinLeft.png), url(img/MiniGameBigZvedabottom.png), url(img/MiniGameMinzvedabottom.png);
   background-position: calc(100% - 50px) 130px, calc(100% - 128px) 96px, calc(100% - 51px) 3365px, calc(100% - 150px) 3412px;
   background-repeat: no-repeat;
+  transition: all 0.3s;
 }
 
 .mini-games__box {
