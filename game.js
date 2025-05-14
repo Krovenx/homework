@@ -73,12 +73,13 @@ function startProblems() {
                 return;
             }
             const parsedAnswer = parseFloat(userAnswer);
+            attempts++;
             if (isNaN(parsedAnswer)) {
                 alert("Введите число!");
                 continue;
             }
             if (parsedAnswer !== problem.answer) {
-                attempts++;
+                
                 alert('Не правильно');
             } else {
                 alert(`Правильно! Ответ: ${problem.answer}, Попыток: ${attempts}`);
@@ -163,3 +164,13 @@ function gameKNB() {
 
     alert("Игра окончена\nВыбор компьютера: " + computer + "\nВаш выбор: " + user);
 }
+
+document.querySelector('.btn').addEventListener('click', function() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    document.querySelector('.mini-games').style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+   
+});
+
+

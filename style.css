@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
@@ -10,15 +14,13 @@
 
 body {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 .right {
   display: flex;
 }
 
-header {
-  overflow: hidden;
+.header {
   background-image: url(img/bigzvezda.svg), url(img/minzvezdaright.svg), url(img/minzvezdarightRGB.svg), url(img/bigzvezdaRGB.svg), url(img/minzvezda.svg);
   background-repeat: no-repeat;
   background-position: top -331px right -491px, right 344px top 568px, right 456px top 538px, left 64px top 95px, left 156px top 70px;
@@ -73,10 +75,10 @@ header {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  transition: all 0.7s;
 }
 
 .header__start-button:hover {
-  transition: all 0.7s;
   background: rgb(255, 255, 255);
   color: #000;
 }
@@ -84,7 +86,6 @@ header {
 .header__animal {
   margin-top: 156px;
   height: 90px;
-  font-family: Montserrar;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgb(188, 236, 48);
   display: flex;
@@ -108,6 +109,7 @@ header {
   }
 }
 .header__animal-item {
+  font-family: Montserrat;
   color: rgb(32, 32, 39);
   font-size: 30px;
   font-weight: 700;
@@ -171,11 +173,11 @@ header {
 .game__block-href {
   z-index: 1;
   text-decoration: none;
+  transition: all 0.3s;
 }
 
 .game__block-href:hover {
   transform: scale(1.1);
-  transition: all 0.3s;
   z-index: 0;
 }
 
@@ -242,6 +244,7 @@ header {
   background-image: url(img/MiniGameZvezda.png), url(img/GameMinLeft.png), url(img/MiniGameBigZvedabottom.png), url(img/MiniGameMinzvedabottom.png);
   background-position: calc(100% - 50px) 130px, calc(100% - 128px) 96px, calc(100% - 51px) 3365px, calc(100% - 150px) 3412px;
   background-repeat: no-repeat;
+  transition: all 0.3s;
 }
 
 .mini-games__box {
@@ -302,10 +305,10 @@ header {
   font-weight: 600;
   line-height: 141.69%;
   width: 247px;
+  transition: all 0.7s;
 }
 
 .mini-games__game-button:hover {
-  transition: all 0.7s;
   background: rgb(255, 255, 255);
   color: #000;
 }
